@@ -12,6 +12,7 @@ div{
   display: flex;
 }
 table{
+  empty-cells: hide;
  border-collapse: separate;
  border: solid 1px grey;
  height: 300px;
@@ -41,4 +42,21 @@ table tr:nth-child(1){
 }
 td{
   padding: 15px;
+  text-align: center;
+}
+td:hover{
+  cursor: pointer;
+  background-color: rgb(80, 80, 255);
+  color: white;
+  transition: all 0.3s ease;
+}
+/* media query */
+@media only screen and (min-width: 500px) and (max-width:780px){
+  table{
+    width: 200px;
+    height: 500px;
+  }
+  body {
+    background-color: rgb(161, 186, 194);
+  }
 }
