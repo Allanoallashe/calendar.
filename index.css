@@ -5,7 +5,7 @@ body{
   font-size: 20px;
   color: rgb(54, 6, 99);
   font-weight: bolder;
-  height: 1000px;
+  height: 1200px;
 }
 
 /* header */
@@ -24,6 +24,7 @@ nav{
   left: 0;
   color: white;
   height: 80px;
+  z-index: 999;
 }
 nav ul{
   list-style: none;
@@ -87,8 +88,10 @@ nav input{
   margin-left: 10px;
   outline: none;
   color: black;
+  font-family: serif;
   font-size: 14px;
   font-weight: bold;
+  border: 1px solid grey;
 }
 nav input::placeholder{
   color: black;
@@ -128,6 +131,16 @@ th:first-child{
 }
 table tr:nth-child(1){
   border: solid 1px grey;
+}
+main{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main input{
+  height: 30px;
+  width: 250px;
 }
 td{
   padding: 15px;
