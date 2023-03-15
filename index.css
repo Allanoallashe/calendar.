@@ -109,31 +109,23 @@ div{
   display: flex;
 }
 table{
-  empty-cells: hide;
- border-collapse: separate;
- border: solid 1px grey;
- height: 300px;
- width: 70%;
- border-spacing: 10px 10px;
- border-radius: 2px;
- background-color: rgb(255, 211, 218);
-}
-tr:nth-child(2) th{
-  margin-top: -10px;
-  height: 35px;
+empty-cells: hide;
+border-collapse: separate;
+border: solid 1px grey;
+height: 300px;
+width: 70%;
+border-spacing: 10px 10px;
+border-radius: 2px;
+background-image: linear-gradient(to right, rgb(255, 163, 178) 0%, rgb(255, 175, 188) 20%, rgb(255, 190, 201)50%, rgb(255, 223, 228) 80%, rgb(255, 197, 207) 100%);
 }
 tr:nth-child(even){
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(128, 126, 126);
 }
 td:nth-child(even){
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(151, 144, 144);
 }
-th:first-child{
-  background-color: rgb(187, 187, 187);
-  height: 100%;
-}
-table tr:nth-child(1){
-  border: solid 1px grey;
+th{
+  background-color: rgb(126, 123, 123);
 }
 main{
   margin-top: 20px;
