@@ -118,7 +118,7 @@ border-spacing: 10px 10px;
 border-radius: 2px;
 background-image: linear-gradient(to right, rgb(255, 163, 178) 0%, rgb(255, 175, 188) 20%, rgb(255, 190, 201)50%, rgb(255, 223, 228) 80%, rgb(255, 197, 207) 100%);
 }
-tr:nth-child(even){
+tr:nth-child(odd){
   background-color: rgb(128, 126, 126);
 }
 td:nth-child(even){
@@ -187,13 +187,82 @@ div a:last-child{
   width: 40px;
 }
 
-/* media query */
-@media only screen and (min-width: 500px) and (max-width:780px){
+
+  /* media query */
+  @media only screen and (max-width: 390px){
+    table{
+      height: 100px;
+      font-size: 11px;
+      margin: 10px 0 10px 50px;
+    }
+    .table{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+    }
+    table tr,
+    table td ,
+    table th{
+      width: 15px;
+      height: 15px;
+    }
+    button{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 391px) and (max-width:420px){
+    table{
+      height: 100px;
+      font-size: 11px;
+      margin: 10px 0 10px 10px;
+    }
+    .table{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+    }
+    table tr,
+    table td ,
+    table th{
+      width: 15px;
+      height: 15px;
+    }
+    button{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width:800px){
+    nav ul{
+      margin-left: -50px;
+  }
+  }
+  @media only screen and (max-width:744px){
+    nav ul{
+      display: none;
+  }
+  }
+  @media screen and (min-width:421px) and (max-width:743px){
   table{
-    width: 200px;
-    height: 500px;
+      height: 300px;
+      font-size: 11px;
+      margin: 10px 0 10px 0;
+    }
+    .table{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+    }
+    table tr,
+    table td ,
+    table th{
+      width: 15px;
+      height: 15px;
+    }
   }
-  body {
-    background-color: rgb(161, 186, 194);
-  }
-}
