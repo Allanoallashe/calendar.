@@ -1,7 +1,7 @@
 
 body{
   background-color: rgb(224, 200, 200);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: rgb(54, 6, 99);
   font-weight: bolder;
@@ -92,13 +92,14 @@ nav input{
   margin-left: 10px;
   outline: none;
   color: black;
-  font-family: serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border: 1px solid grey;
 }
 nav input::placeholder{
   color: black;
+  font-weight: bold;
 }
 
 div{
