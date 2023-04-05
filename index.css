@@ -6,7 +6,7 @@ body{
   color: rgb(54, 6, 99);
   font-weight: bolder;
   height: 1200px;
-  background-color: rgb(161, 186, 194);
+  background-color: #0c0666;
 }
 
 /* header */
@@ -116,16 +116,21 @@ height: 300px;
 width: 70%;
 border-spacing: 10px 10px;
 border-radius: 2px;
-background-image: linear-gradient(to right, rgb(255, 163, 178) 0%, rgb(255, 175, 188) 20%, rgb(255, 190, 201)50%, rgb(255, 223, 228) 80%, rgb(255, 197, 207) 100%);
+background-image: linear-gradient(to right,#03172e 0%, #d7e2fd 20%,#ffe064 50%,  #01db8b 75%, #03172e 100% );
+background-size: 19%;
+color: #1f3103;
 }
 tr:nth-child(odd){
-  background-color: rgb(128, 126, 126);
+  background-color: #040f1c;
+  color: #288362;
 }
 td:nth-child(even){
-  background-color: rgb(151, 144, 144);
+  background-color: #040f1c;
+  color: #288362;
 }
 th{
-  background-color: rgb(126, 123, 123);
+  background-color: #040f1c;
+  color: #288362;
 }
 main{
   margin-top: 20px;
@@ -143,11 +148,11 @@ td{
   padding: 15px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid #191717;
 }
 td:hover{
   cursor: pointer;
-  background-color: rgb(80, 80, 255);
+  background-color: #0c0666;
   color: white;
   transition: all 0.3s ease;
   transform: scale(1.095);
@@ -166,7 +171,8 @@ div a:first-child{
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: grey;
+  background-color: #025cca;
+  color: #fff;
   font-weight: bolder;
   font-size: 20px;
   height: 40px;
@@ -179,17 +185,22 @@ div a:last-child{
   justify-content: center;
   text-decoration: none;
   margin-left: 20px;
-  background-color: grey;
+  background-color: #025cca;
   font-weight: bolder;
+  color: #fff;
   font-size: 20px;
   height: 40px;
   border-radius: 50%;
   width: 40px;
 }
 
+section li,
+section span{
+  color: #fff;
+}
 
   /* media query */
-  @media only screen and (max-width: 390px){
+  @media only screen and (min-width: 390px) and (max-width:500px){
     table{
       height: 100px;
       font-size: 11px;
@@ -236,21 +247,31 @@ div a:last-child{
     }
   }
 
-  @media only screen and (max-width:800px){
+  @media only screen and (min-width:800px){
     nav ul{
       margin-left: -50px;
   }
   }
-  @media only screen and (max-width:744px){
+  @media only screen and (min-width:744px) and (max-width:900px){
     nav ul{
       display: none;
   }
+  table{
+      transform: scale(0.95);
+    }
+    table tr,
+    table td ,
+    table th{
+      width: 15px;
+      height: 15px;
+    }
   }
   @media screen and (min-width:421px) and (max-width:743px){
   table{
       height: 300px;
       font-size: 11px;
       margin: 10px 0 10px 0;
+      transform: scale(0.95);
     }
     .table{
       display: flex;
